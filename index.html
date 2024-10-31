@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Form with Background Image</title>
+        <style>
+                body {
+                        margin: 0;
+                        padding: 0;
+                        height: 100vh;
+                        /* Full height */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(https://images.unsplash.com/photo-1649770638360-35ed4eb0e381?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                        /* Change this to your image */
+                        background-size:auto;
+                        /* Cover the entire background */
+                        background-position: center;
+                        /* Center the background */
+                        height: 1300px;
+                }
+
+                .form-container {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        /* Semi-transparent white background */
+                        padding: 20px;
+                        border-radius: 10px;
+                        /* Rounded corners */
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        /* Shadow effect */
+                }
+
+                label {
+                        display: block;
+                        /* Stack labels */
+                        margin-bottom: 10px;
+                        /* Space between labels */
+                }
+        </style>
+</head>
+
+<body>
+
+
+</html>
+<div class="container">
+        <div class="form">
+                <div class="image">
+                        <img src=" https://student.saylaniwelfare.com/assets/logo-OpazD70S.png" alt="saylani-logo"
+                                title="smit-logo">
+                </div>
+                <form action="#" method="post">
+                        <h2 class="heading">Registration Form</h2>
+                        <div class="details">
+                                <label for="name" class="label">Full name</label>
+
+
+                                <input type="text" name="name" class="input" id="name" placeholder="Full name"
+                                        spellcheck="true" required />
+
+                                <label for="email" class="label">Email</label>
+
+                                <input type="email" name="email" class="input" id="email" placeholder="Email"
+                                        required />
+
+                                <label for="date-of-birth" class="label">Date of birth</label>
+                                <input type="date" name="date-of-birth" class="input" id="date-of-birth" required />
+
+                                <label for="phone" class="label">Phone</label>
+                                <input type="number" name="phone" class="input" id="phone" placeholder="Phone"
+                                        required />
+
+                                <label for="qualification" class="label">Qualification</label>
+                                <select name="qualification" id="qualification" class="input">
+                                        <option value="qualification" selected>Qualification</option>
+                                        <option value="matric">Matric</option>
+                                        <option value="intermediate">intermediate</option>
+                                        <option value="undergraduate">Undergraduate</option>
+                                        <option value="graduate">Graduate</option>
+                                        <option value="masters">Masters</option>
+                                        <option value="other">Other</option>
+                                </select>
+
+                                <label for="institution" class="label">Last institution</label>
+                                <input type="text" name="institution" class="input" id="institution"
+                                        placeholder="Last institution" spellcheck="true" required />
+
+
+                                <label for="graduation" class="label">Graduation year</label>
+                                <select name="graduation" id="graduation" class="input">
+                                        <option value="graduation year" selected>Graduation year</option>
+                                        <option value="first">1st</option>
+                                        <option value="second">2<sup>nd</sup></option>
+                                        <option value="third">3<sup>rd</sup></option>
+                                        <option value="fourth">4<sup>th</sup></option>
+                                </select>
+
+                                <label for="program" class="label">Select course or program</label>
+                                <select name="program" id="program" class="input">
+                                        <option value="course or program" selected>Select course or program</option>
+                                        <option value="english-language">English Language Course</option>
+                                        <option value="graphic-designing">Graphic Designing</option>
+                                        <option value="mobile app development">Mobile App development</option>
+                                        <option value="cyber security">Cyber security</option>
+
+                                </select>
+
+
+                                <label for="gender" class="label">Gender</label>
+                                <input type="checkbox" name="Gender" class="input-1" value="male"
+                                        onclick="onlyOne(this)" id="Gender" /><label for="Gender"
+                                        class="label-1">male</label>
+                                <input type="checkbox" name="Gender" class="input-1" value="female"
+                                        onclick="onlyOne(this)" id="additional-courses-or-workshop" />
+                                <label for="additional-courses-or-workshop" class="label-1">female</label>
+
+
+                                <label for="address" class="label">Address</label>
+                                <input type="text" name="address" class="input" id="address" placeholder="Address"
+                                        spellcheck="false" required />
+
+                                <label for="city" class="label">Select city</label>
+                                <select name="city" id="city" class="input" required>
+                                        <option value="select-city" selected>Select city</option>
+                                        <option value="karachi">Karachi</option>
+                                        <option value="faisalabad">Faisalabad</option>
+                                </select>
+
+
+
+                                <button class="btn" type="submit">Submit</button>
+                </form>
+        </div>
+</div>
+
+</div>
+</body>
